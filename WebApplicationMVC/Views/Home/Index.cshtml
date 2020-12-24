@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/User/Index");
+    }
+}
+
+<h2>Dobrodosli</h2>
